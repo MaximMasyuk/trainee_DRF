@@ -19,3 +19,6 @@ class Snippet(models.Model):
 
     class Meta:
         ordering = ["created"]
+
+    def __str__(self) -> str:
+        return f"{self.title}"
